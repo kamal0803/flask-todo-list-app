@@ -19,7 +19,6 @@
         <li><a href="{{ url_for('login') }}">Log In</a></li>
         <li><a href="#">New List</a></li>
     </div>
-
-    <div class="pg_heading">
-        An app to create your to do list!
-    </div>
+    {% block content %} {% endblock %}
+</body>
+</html>

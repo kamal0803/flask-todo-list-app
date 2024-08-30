@@ -1,4 +1,8 @@
-{% include "header.html" %}
+{% extends "base.html" %} {% block content %}
+
+<div class="pg_heading">
+    An app to create your to do list!
+</div>
 
     <form action="" method="POST">
         <input type="text" name="todo_text" id="todo_text" placeholder="Write your next task here...">
@@ -15,5 +19,4 @@
         {% endfor %}
     </ul>
 
-</body>
-</html>
+{% endblock %}
